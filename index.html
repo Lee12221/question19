@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영상박물관</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <!-- #wrap>#left+#contents+#slide^#footer -->
+    <div id="wrap">
+        <div id="left">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="로고"></a>
+            </div>
+            <nav>
+                <!-- ul.gnb>li*4>a[href="#"]{버튼$}+ul.sub>li*4>a[href="#"]{s버튼$} -->
+                <ul class="gnb">
+                    <li>
+                        <a href="#">버튼1</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼2</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼3</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼4</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="spot">
+                    <a href="#">로그인</a> | 
+                    <a href="#">회원가입</a>
+                </div>
+            </nav>
+        </div>
+        <div id="contents">
+            <!-- #banner+hr+#notice+hr+#gallery -->
+            <div id="banner">
+                <!-- ul.banner>li*3>a[href="#"] -->
+                <ul class="banner">
+                    <li><a href="#">
+                        <img src="img/banner.png" alt="배너">
+                    </a></li>
+                    <li><a href="#">
+                        <h3>
+                            제20회 서울국제실험영화페스티벌
+                        </h3>
+                        <p>
+                            시네마테크KOFA 상영일정
+                            영화가 있는 곳, <br>
+                            영화를 만나는 곳, 영화가 당신을 기다리는 곳
+                        </p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/next.png" alt="다음">
+                    </a></li>
+                </ul>
+            </div>
+            <hr>
+            <div id="notice">
+                <!-- ul.notice>li*4>a[href="#"]>div.subject+div.date -->
+                <div class="title">공지사항</div>
+                <ul class="notice">
+                    <li>
+                        <a href="#">
+                            <div class="subject">국제실험영화페스티벌 좌석 안내	</div>
+                            <div class="date">2023.07.14</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject">한국영화박물관 휴관 연장	</div>
+                            <div class="date">2023.07.11</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject">한국영상자료원 만족도 조사	</div>
+                            <div class="date">2023.07.11</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject"><아카이브 프리즘> 정기구독	</div>
+                            <div class="date">2023.06.15</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div id="gallery">
+                <div class="title">갤러리</div>
+                <!-- ul.gallery>li*2>a[href="#"]>img[src="img/gallery$.jpg" alt="갤러리"] -->
+                <ul class="gallery">
+                    <li><a href="#"><img src="img/gallery1.jpg" alt="갤러리">극한직업(2018)</a></li>
+                    <li><a href="#"><img src="img/gallery2.jpg" alt="갤러리">기생충(2019)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide">
+            <!-- ul>li*4>a[href="#"]>div.text -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            한국고전영화 <br>
+                            청춘의 십자로(1934) by 안종화
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            시네마테크KOFA 기획전 <br>
+                            '여름이 흐르는 풍경'
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            KMDb | 영화글 | 삐용삐용B무비 시즌2 <br>
+                            고스톱 살인 by 허경
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            한국고전영화 <br>
+                            청춘의 십자로(1934) by 안종화
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
